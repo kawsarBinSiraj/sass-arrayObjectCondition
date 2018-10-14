@@ -1,1 +1,1 @@
-# sass-arrayObjectCondition-with-gulp
+# sass-arrayObjectCondition
