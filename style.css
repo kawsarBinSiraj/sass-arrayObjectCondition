@@ -1,0 +1,7 @@
+h3:after {
+  content: "(color is not found , this color is by default !!)";
+  font-size: 12px;
+  color: var(--red); }
+
+h3 {
+  color: ""; }

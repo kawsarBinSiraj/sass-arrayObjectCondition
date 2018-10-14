@@ -1,0 +1,33 @@
+
+// variables
+$colors :(
+    color5 : red,
+    color2 : green,
+    moreColor : (
+        color3 : blue ,
+        color4 : yellow
+    )
+);
+
+$mainColor : '';
+$notFound : '';
+// check is color has or not
+@if map-has-key($colors, color1) {
+    $mainColor : map-get($colors, color1);
+} @else {
+    $notFound : '(color is not found , this color is by default !!)';
+}
+
+@if $notFound != '' {
+    h3:after {
+        content: $notFound;
+        font-size: 10px;
+        color: var(--red);
+    }  
+} 
+
+
+// main style
+h3 {
+    color: $mainColor;
+}
